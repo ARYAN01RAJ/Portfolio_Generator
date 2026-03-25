@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minimal Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1><%= about.name %></h1>
+    <p><%= about.bio %></p>
+
+    <hr>
+
+    <h2>Projects</h2>
+    <ul>
+        <% projects.forEach(project => { %>
+            <li>
+                <strong><%= project.name %></strong> 
+                (<%= project.language %>)  
+                - ⭐ <%= project.star_count %>  
+                <a href="<%= project.url %>">Link</a>
+            </li>
+        <% }) %>
+    </ul>
+
+    <hr>
+
+    <h2>Skills</h2>
+    <p>
+        <% skills.forEach(skill => { %>
+            <span><%= skill.language %> | </span>
+        <% }) %>
+    </p>
+
+</div>
+
+</body>
+</html>

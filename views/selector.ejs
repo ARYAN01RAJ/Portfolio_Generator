@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Template</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Select a Template</h1>
+
+    <form action="/portfolio" method="GET">
+        
+        <input type="text" name="username" placeholder="Enter GitHub Username" required />
+
+        <div class="section">
+
+            <label>
+                <input type="radio" name="template" value="portfolio" checked />
+                Modern (Card UI)
+            </label><br>
+
+            <label>
+                <input type="radio" name="template" value="minimal" />
+                Minimal
+            </label><br>
+
+            <label>
+                <input type="radio" name="template" value="clean" />
+                Clean Professional
+            </label>
+
+        </div>
+
+        <button type="submit">Generate Portfolio</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
